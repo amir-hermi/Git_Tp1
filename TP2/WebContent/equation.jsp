@@ -22,10 +22,13 @@ int somme;%>
 <body style='background-color: red;'>
 <center><font size="50">Aucun résultat Réel</font></center>
 <% }else if(somme==0){ %>
+<%somme=(-intb/(2*inta)); %>
 <center><font size="50"><%= somme %> </font></center>
 <%}else{ %>
 <body style='background-color: green;'>
-<center><font size="50"><%= somme %> </font></center>
+<p>Deux solution</p>
+<center><font size="50">X1=<%= (-intb-Math.sqrt(somme)/(2*inta)) %> </font></center><br>
+<center><font size="50">X2=<%= (-intb+Math.sqrt(somme)/(2*inta)) %> </font></center>
 <%} %> 
 </body>
 </html>

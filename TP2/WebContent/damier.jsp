@@ -16,7 +16,7 @@
 <%if((i+j)%2==0){%>
  <td bgcolor="black" width="50" height="50"></td>
 <%}else {%>
- <td width="50" height="50"></td>
+ <td bgcolor="red" width="50" height="50"></td>
 <%} %>
 <%} %>
 </tr>
